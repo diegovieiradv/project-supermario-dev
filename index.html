@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
     <title>Mario-Jump</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="start-screen" id="startgame">
-    <h1>Jump</h1>
-    <button onclick="location.href='game.html'">Start Game</button>
-
+      <h1>Jump</h1>
+      <button onclick="location.href='game.html'">Start Game</button>
     </div>
-    <img src = "assets/2x1_SuperMarioHub.jpg" alt="banner" class="banner">
-</body>
+    <div id="touchArea" style="position: fixed; inset: 0; z-index: 9999"></div>
+
+    <img src="assets/2x1_SuperMarioHub.jpg" alt="banner" class="banner" />
+  </body>
 </html>
