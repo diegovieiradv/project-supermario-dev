@@ -51,5 +51,5 @@ const loop2 = setInterval(() => {
     clearInterval(loop2);
   }
 }, 10);
-document.addEventListener("touchstart", jump);
+window.addEventListener("touchstart", jump);
 document.addEventListener("keydown", jump);
