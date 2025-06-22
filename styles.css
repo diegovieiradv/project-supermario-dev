@@ -1,167 +1,227 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .banner {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-image: url('./assets/mario-bros-cenario.jpg');
-    overflow: hidden;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
 }
-button{
-    z-index: 1;
-    position: absolute;
-    top: 70%;
-    left: 50%;
-    transform: translate(550%, 330%);
-    width: 195px;
-    height: 65px;
-    background-color:rgb(0, 0, 0);
-    color: #ffffff;
-    border: none;
-    border-radius: 10px;
-    font-size: 35px;
-    cursor: pointer;
+button {
+  z-index: 1;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(550%, 330%);
+  width: 195px;
+  height: 65px;
+  background-color: rgb(0, 0, 0);
+  color: #ffffff;
+  border: none;
+  border-radius: 10px;
+  font-size: 35px;
+  cursor: pointer;
 }
 h1 {
-    color: #000000;
-    text-align: center;
-    padding: 20px 0;
-    font-family: "Suez One", serif;
-    position: relative;
-    transform: translateY(135%) translateX(1850%);
-    font-height: 300px; 
-    font-size: 220px;
-    text-shadow: 2px 2px 4px rgb(247, 244, 244);
-    z-index: 1;
+  color: #000000;
+  text-align: center;
+  padding: 20px 0;
+  font-family: "Suez One", serif;
+  position: relative;
+  transform: translateY(135%) translateX(1850%);
+  font-height: 300px;
+  font-size: 220px;
+  text-shadow: 2px 2px 4px rgb(247, 244, 244);
+  z-index: 1;
 }
- 
-#startgame{
-    width: 50px;
-    height: 50px;
-   position: absolute;
-   
+
+#startgame {
+  width: 50px;
+  height: 50px;
+  position: absolute;
 }
 .game-board {
-    width: 100%;
-    height: 100vh;
-    margin: 0 auto;
-    position: relative;
-    overflow: hidden;
-    background-size: cover;
-    background-position: center bottom;
-    background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center bottom;
+  background-repeat: no-repeat;
 }
 .cenary {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url('./assets/mario-bros-cenario.jpg');
-    background-size: auto;
-    background-repeat: repeat-x;
-    animation: moveCenary 30s linear infinite;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("./assets/mario-bros-cenario.jpg");
+  background-size: auto;
+  background-repeat: repeat-x;
+  animation: moveCenary 60s linear infinite;
 }
 
 @keyframes moveCenary {
-    from {
-        background-position-x: 0;
-    }
-    to {
-        background-position-x: -100%;
-    }
+  from {
+    background-position-x: 0;
+  }
+  to {
+    background-position-x: -100%;
+  }
 }
 
 .pipe {
-    position: absolute;
-    bottom: 0;
-    width: 70px;
-    height: 60px;
-    animation: movePipe 2s infinite linear;
+  position: absolute;
+  bottom: 14px;
+  width: 70px;
+  height: 60px;
+  animation: movePipe 2s infinite linear;
 }
 
-
 @keyframes movePipe {
-    from {
-        right: -80px;
-    }
-    to {
-        right: 100%;
-    }
-    }
+  from {
+    right: -80px;
+  }
+  to {
+    right: 100%;
+  }
+}
 
 .pumpkin {
-
-    position: absolute;
-    bottom: 0;
-    width: 70px;
-    height: 70px;
-    animation: movePumpkin 2s infinite linear;
-    animation-delay: 3s;
-    right: -80px;
-
+  position: absolute;
+  bottom: 14px;
+  width: 70px;
+  height: 70px;
+  animation: movePumpkin 2s infinite linear;
+  animation-delay: 3s;
+  right: -80px;
 }
 
 @keyframes movePumpkin {
-    from {
-        right: -80px;
-    }
-    to {
-        right: 100%;
-    }
+  from {
+    right: -80px;
+  }
+  to {
+    right: 100%;
+  }
 }
 
 .mario {
-    position: absolute;
-    bottom: 0;
-    width: 160px;
+  position: absolute;
+  bottom: 14px;
+  width: 160px;
 }
 @keyframes jump {
-    0% {
-        bottom: 0;
-    }
-    30% {
-        bottom: 180px;
-    }
-    40% {
-        bottom: 180px;
-    }
-    50% {
-        bottom: 180px;
-    }
-    60% {
-        bottom: 180px;
-    }
-    70% {
-        bottom: 180;
-    }
-    100% {
-        bottom: 0;
-    }
+  0% {
+    bottom: 0;
+  }
+  30% {
+    bottom: 180px;
+  }
+  40% {
+    bottom: 180px;
+  }
+  50% {
+    bottom: 180px;
+  }
+  60% {
+    bottom: 180px;
+  }
+  70% {
+    bottom: 180px;
+  }
+  100% {
+    bottom: 0;
+  }
 }
 
-.jump{
-    animation: jump 500ms ease-out;
+.jump {
+  animation: jump 500ms ease-out;
 }
 .clouds {
-    position: absolute;
-    width: 550px;
-    top: 80px;
-    animation: moveClouds 30s linear infinite;
+  position: absolute;
+  right: -600px;
+
+  width: 550px;
+  top: 80px;
+  background-size: auto;
+  background-repeat: repeat-x;
+  animation: moveClouds 50s linear infinite;
 }
 @keyframes moveClouds {
-    from {
-        right: 0px;
-    }
-    to {
-        right: 100%;
-    }
+  from {
+    right: -600px;
+  }
+  to {
+    right: 100%;
+  }
 }
 
+@media (max-width: 1366px){
+ 
+button {
+  
+  position: absolute;
+  top: 140%;
+  left: -300%;
+  transform: translate(550%, 330%);
+  width: 195px;
+  height: 65px;
+  background-color: rgb(0, 0, 0);
+  color: #ffffff;
+  border: none;
+  border-radius: 10px;
+  font-size: 35px;
+  cursor: pointer;
+}
 
+h1 {
+  color: #000000;
+  text-align: center;
+  padding: 20px 0;
+  position: relative;
+  transform: translateY(190%) translateX(1500%);
+  font-height: 300px;
+  font-size: 200px;
+  text-shadow: 2px 2px 4px rgb(247, 244, 244);
+  z-index: 1;
+} 
+}
+@media (max-width: 896px){
 
-
+.banner {
+  position: absolute;
+  width: 115%;
+  height: 100%;
+  overflow: hidden;
+}
+button {
+  position: absolute;
+  top: -255%;
+  left: -785%;
+  transform: translate(550%, 330%);
+  width: 195px;
+  height: 65px;
+  background-color: rgb(0, 0, 0);
+  color: #ffffff;
+  border: none;
+  border-radius: 10px;
+  font-size: 35px;
+  cursor: pointer;
+}
+h1 {
+  color: #000000;
+  text-align: center;
+  padding: 20px 0;
+  position: relative;
+  transform: translateY(120%) translateX(1300%);
+  font-height: 300px;
+  font-size: 110px;
+  text-shadow: 2px 2px 4px rgb(247, 244, 244);
+  z-index: 1;
+}
+}

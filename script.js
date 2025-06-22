@@ -53,5 +53,7 @@ const loop2 = setInterval(() => {
 }, 10);
 window.addEventListener("keydown", jump);
 window.addEventListener("touchstart", jump);
+
 const touchArea = document.getElementById("touchArea");
+
 touchArea.addEventListener("pointerdown", jump);
