@@ -237,24 +237,24 @@ h1 {
     background-color: rgb(241, 201, 139);
   }
   .banner {
-    width: 73%;
-    height: 73vh;
+    width: 100%;
+    height: 100vh;
   }
 
   button {
     position: relative;
-    top: -85px;
-    left: 400px;
+    top: -60px;
+    left: 560px;
     cursor: pointer;
     transform: scale(0.8);
   }
 
   h1 {
     position: relative;
-    top: 165px;
-    left: 412px;
+    top: 240px;
+    left: 560px;
     transform: none;
-    font-size: 75px;
+    font-size: 90px;
     text-align: center;
   }
 
