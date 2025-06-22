@@ -12,7 +12,19 @@
     overflow: hidden;
 }
 button{
-    
+    z-index: 1;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(550%, 330%);
+    width: 195px;
+    height: 65px;
+    background-color:rgb(0, 0, 0);
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    font-size: 35px;
+    cursor: pointer;
 }
 h1 {
     color: #000000;
@@ -31,7 +43,7 @@ h1 {
     width: 50px;
     height: 50px;
    position: absolute;
-    z-index: 1;
+   
 }
 .game-board {
     width: 100%;
