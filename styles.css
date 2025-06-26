@@ -192,7 +192,6 @@ h1 {
     padding: 20px 0;
     position: relative;
     transform: translateY(200%) translateX(1500%);
-    font-height: 700px;
     font-size: 200px;
     text-shadow: 2px 2px 4px rgb(247, 244, 244);
     z-index: 1;
