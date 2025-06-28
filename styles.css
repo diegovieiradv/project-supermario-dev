@@ -159,35 +159,11 @@ h1 {
   }
 }
 @media (max-width: 767px) and (orientation: landscape) {
-  .banner {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-}
-  button {
-    transform: translate(160%, 220%);
-    width: 240px;
-  }
-  button:hover {
-    background-color: rgb(255, 3, 3);
-  }
-  h1 {
-    transform: translateY(40%) translateX(790%);
-    font-size: 85px;
-  }
-  #startgame {
-    width: 50px;
-    height: 50px;
-    position: absolute;
-  }
-
   .pipe,
   .pumpkin {
     bottom: 35px;
     width: 70px;
   }
-
   .mario {
     bottom: 35px;
     width: 160px;
@@ -199,21 +175,8 @@ h1 {
   }
 }
 
-@media (min-width: 768px) and (max-width: 1023px) {
-  .banner {
-    width: 100%;
-    height: 100%;
-  }
-  button {
-    transform: translate(92%, 525%);
-    height: 100px;
-    width: 360px;
-    font-size: 65px;
-  }
-  h1 {
-    transform: translateY(125%) translateX(755%);
-    font-size: 150px;
-  }
+@media (max-width: 1023px) {
+  
   .cenary {
     background-size: cover;
   }
@@ -229,18 +192,8 @@ h1 {
   }
 }
 
-@media (max-width: 1023px) and (min-width: 768px) and (orientation: landscape)
- {
-button {
-    transform: translate(190%, 425%);
-    height: 80px;
-    width: 300px;
-    font-size: 50px;
-  }
-  h1 {
-    transform: translateY(74%) translateX(1160%);
-    font-size: 150px;
-  }
+@media (max-width: 1023px)and (orientation: landscape) {
+
   .pipe,
   .pumpkin {
     bottom: 35px;
@@ -253,18 +206,9 @@ button {
   }
 }
 
-@media (min-width: 1024px) and (max-width: 1440px){
+@media (max-width: 1024px){
   
-  button {
-    transform: translate(92%, 525%);
-    height: 100px;
-    width: 360px;
-    font-size: 65px;
-  }
-  h1 {
-    transform: translateY(125%) translateX(755%);
-    font-size: 150px;
-  }
+  
 
   .cenary {
     animation-direction: reverse;
