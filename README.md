@@ -1,4 +1,4 @@
-# 🎮 Super Mario Game
+# 🎮 Jump Mario
 
 ## 📝 Sobre o Projeto
 
