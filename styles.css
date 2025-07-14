@@ -216,18 +216,17 @@ h1 {
     transform: translateY(75%) translateX(1950%);
   }
 }
-  .cenary {
-    animation-direction: reverse;
-  }
+.cenary {
+  animation-direction: reverse;
+}
 
-  .pipe,
-  .pumpkin {
-    bottom: 35px;
-    width: 70px;
-  }
+.pipe,
+.pumpkin {
+  bottom: 35px;
+  width: 70px;
+}
 
-  .mario {
-    bottom: 35px;
-    width: 160px;
-  }
+.mario {
+  bottom: 35px;
+  width: 160px;
 }
